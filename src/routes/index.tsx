@@ -6,7 +6,7 @@ import type { FormField } from "@/components/rsvp-form";
 export const eventData: EventData = {
   name: "Aurora",
   age: 5,
-  date: "10/08/2026",
+  date: "10/10/2026",
   time: "15:00h",
   location: "Condomínio Village do Oeste",
 };
