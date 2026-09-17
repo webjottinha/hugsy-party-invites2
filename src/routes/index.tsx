@@ -2,8 +2,8 @@ import { createFileRoute } from "@tanstack/react-router";
 import { CalendarDays, Clock3, Heart, Instagram, MapPin, Phone, Waves } from "lucide-react";
 import { useRef } from "react";
 
-import auroraAsset from "@/assets/aurora.jpeg.asset.json";
-import bearsAsset from "@/assets/ursinhos-piscina.png.asset.json";
+import auroraImage from "@/assets/aurora.jpeg";
+import ursinhosImage from "@/assets/ursinhos-carinhosos.png";
 import { Bubbles, Clouds, Rainbow } from "@/components/party-icons";
 import { RsvpForm } from "@/components/rsvp-form";
 import { Button } from "@/components/ui/button";
@@ -76,11 +76,11 @@ function Invitation() {
 
           <div className="relative mx-auto mt-2 w-full max-w-2xl animate-rise-delayed pb-6 sm:pb-2">
             <div className="aurora-frame relative z-20 mx-auto aspect-square w-[46%] max-w-[270px] overflow-hidden rounded-full border-[7px] border-card shadow-party sm:border-[10px]">
-              <img src={auroraAsset.url} alt="Aurora sorrindo" className="h-full w-full object-cover object-[50%_24%]" />
+              <img src={auroraImage} alt="Aurora sorrindo" className="h-full w-full object-cover object-[50%_24%]" />
             </div>
             <div className="pool-water relative -mt-9 min-h-48 overflow-hidden rounded-[48%_52%_18%_18%/28%_30%_16%_16%] border-[7px] border-card/70 shadow-water sm:-mt-14 sm:min-h-64">
               <div className="water-shine" />
-              <img src={bearsAsset.url} alt="Ursinhos coloridos brincando na piscina" className="bear-party absolute inset-x-0 bottom-0 z-10 mx-auto w-[94%] max-w-2xl object-contain" />
+              <img src={ursinhosImage} alt="Ursinhos coloridos brincando na piscina" className="bear-party absolute inset-x-0 bottom-0 z-10 mx-auto w-[94%] max-w-2xl object-contain" />
             </div>
           </div>
         </div>
