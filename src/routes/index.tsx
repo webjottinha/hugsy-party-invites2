@@ -2,6 +2,7 @@ import { createFileRoute } from "@tanstack/react-router";
 import { CalendarDays, Clock3, Heart, Instagram, MapPin, Phone, Waves } from "lucide-react";
 import { useRef } from "react";
 
+import musica from "@/assets/mundobita.mp3";
 import auroraImage from "@/assets/aurora.jpeg";
 import ursinhosImage from "@/assets/ursinhos-carinhosos.png";
 import { Bubbles, Clouds, Rainbow } from "@/components/party-icons";
@@ -39,6 +40,15 @@ function Invitation() {
   }
 
   return (
+       <>
+  <audio id="musica" src={musica} loop />
+
+   <button
+  onClick={() => (document.getElementById("musica") as HTMLAudioElement)?.play()}
+  className="fixed bottom-5 right-5 z-50 rounded-full bg-card px-4 py-3 font-bold shadow-party"
+>
+  🎵 Tocar 
+</button>
     <main className="overflow-hidden bg-background">
       <section className="hero-scene relative flex min-h-[94svh] flex-col overflow-hidden px-4 pb-12 pt-7 sm:px-7 sm:pt-10">
         <Clouds />
@@ -132,6 +142,7 @@ function Invitation() {
         </div>
       </footer>
     </main>
+          </>
   );
 }
 
